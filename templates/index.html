@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textutils</title>
+</head>
+<body>
+  <h1 style="color:green">Hello, World!</h1>
+  <h3 style="color:red">This website performs some task with your texts</h3>
+  <p>This is a paragraph.</p>
+ <form action="/analyze" method="post">{% csrf_token %}
+     <textarea name="text" style="width: 536px; height: 154px;"></textarea><br>
+     <input type="checkbox" name="removepunc">Remove the punctuation<br>
+     <input type="checkbox" name="Uppercase">UPPERCASE<br>
+     <input type="checkbox" name="Newlineremover">Remove newline<br>
+     <button type="submit">Analyse text</button>
+ </form>
+ </body>   
+ </html> 
